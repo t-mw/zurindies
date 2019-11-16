@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <section id="left">
+  <section id="info">
     <h2>What is zürindies?</h2>
     <p>
       We’re a group of people working on their own game-related projects, meeting up for casual co-working on Saturdays in Zürich. Come to make some progress, get feedback on your project, or just have a chat!
@@ -8,7 +8,33 @@
       We normally meet at <a href="https://www.auer.coffee/">Café Auer</a> from 1pm onwards, but check <a href="https://www.twitter.com/zurindies">@zurindies</a> or the <a href="https://www.meetup.com/zurindies">meetup</a> page for the latest. To find us, look for the gamepad on the table.
     </p>
   </section>
-  <section id="right">
+  <section id="twitter">
     <a class="twitter-timeline" data-width="310" data-height="300" data-theme="light" href="https://twitter.com/zurindies?ref_src=twsrc%5Etfw">Tweets by zurindies</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    {{ range $project := $.Site.Data.projects.projects -}}
+    <div class="project">
+      <a href="{{ .link }}">
+        {{ if .videos }}
+          <video width="600" height="400" autoplay loop muted>
+            {{ range $video := .videos -}}
+              {{ with $.Resources.GetMatch $video -}}
+                <source src="{{ .RelPermalink }}" type="{{ .MediaType }}">
+              {{ end -}}
+            {{ end -}}
+          </video>
+        {{ end -}}
+        {{ range $image_index, $image_name := .images -}}
+          {{ $image := $.Resources.GetMatch $image_name -}}
+          {{ $width := 600 -}}
+          {{ $height := 400 -}}
+          {{ $resized1x := $image.Fill (printf "%vx%v Top Gaussian png" $width $height) -}}
+          {{ $resized2x := $image.Fill (printf "%vx%v Top Gaussian png" (mul $width 2) (mul $height 2)) -}}
+          <img class="image{{ $image_index }}" src="{{$resized1x.RelPermalink}}" srcset="{{$resized1x.RelPermalink}} 1x, {{$resized2x.RelPermalink}} 2x" alt="{{ $project.title }}" />
+        {{ end -}}
+        <div class="title">{{ $project.title -}}</div>
+      </a>
+    </div>{{ end -}}
   </section>
 {{ end -}}
