@@ -1,0 +1,7 @@
+baseURL = "https://www.zurindies.ch/"
+languageCode = "en-us"
+title = "zurindies"
+theme = "zurindies"
+disableHugoGeneratorInject = true
+uglyurls = true
+disableKinds = ["RSS"]
