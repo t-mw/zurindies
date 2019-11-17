@@ -4,4 +4,4 @@ title = "zurindies"
 theme = "zurindies"
 disableHugoGeneratorInject = true
 uglyurls = true
-disableKinds = ["RSS"]
+disableKinds = ["RSS", "sitemap"]
