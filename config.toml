@@ -1,6 +1,6 @@
 baseURL = "https://www.zurindies.ch/"
 languageCode = "en-us"
-title = "zurindies"
+title = "zürindies"
 theme = "zurindies"
 disableHugoGeneratorInject = true
 uglyurls = true
