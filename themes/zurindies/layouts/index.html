@@ -17,7 +17,7 @@
     <div class="project">
       <a href="{{ .link }}">
         {{ if .videos }}
-          <video width="600" height="400" autoplay loop muted>
+          <video width="600" height="400" autoplay loop muted playsinline>
             {{ range $video := .videos -}}
               {{ with $.Resources.GetMatch $video -}}
                 <source src="{{ .RelPermalink }}" type="{{ .MediaType }}">
