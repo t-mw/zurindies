@@ -1,12 +1,12 @@
 [[projects]]
-link = "https://www.gamedev.net/projects/1608-leaf/"
-title = "Leaf"
+link = "https://shinmera.github.io/kandria/"
+title = "Kandria"
 videos = ["leaf.webm", "leaf.mp4"]
 
 [[projects]]
-link = "https://twitter.com/cmd_tea"
-title = "Superhero Crusader"
-images = ["superhero.png"]
+link = "https://twitter.com/UrbanGiftGame"
+title = "Urban Gift"
+images = ["urban-gift.jpg"]
 
 [[projects]]
 link = "https://ooku.itch.io/tr33public"
