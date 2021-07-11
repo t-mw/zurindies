@@ -29,8 +29,8 @@
           {{ $image := $.Resources.GetMatch $image_name -}}
           {{ $width := 600 -}}
           {{ $height := 400 -}}
-          {{ $resized1x := $image.Fill (printf "%vx%v Top Gaussian png" $width $height) -}}
-          {{ $resized2x := $image.Fill (printf "%vx%v Top Gaussian png" (mul $width 2) (mul $height 2)) -}}
+          {{ $resized1x := $image.Fill (printf "%vx%v Top png" $width $height) -}}
+          {{ $resized2x := $image.Fill (printf "%vx%v Top png" (mul $width 2) (mul $height 2)) -}}
           <img class="image{{ $image_index }}" src="{{$resized1x.RelPermalink}}" srcset="{{$resized1x.RelPermalink}} 1x, {{$resized2x.RelPermalink}} 2x" alt="{{ $project.title }}" />
         {{ end -}}
         <div class="title">{{ $project.title -}}</div>
