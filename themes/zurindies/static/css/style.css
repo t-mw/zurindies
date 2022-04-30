@@ -73,13 +73,8 @@ main {
   box-shadow:         0px 3px 5px 3px #3a3a3a;
 }
 
-#info, #twitter, #projects {
+#info, #projects {
   margin-bottom: 20px;
-}
-
-#twitter {
-  width: 310px;
-  float: right;
 }
 
 #info, #projects {
@@ -90,11 +85,6 @@ main {
   -webkit-border-radius: 5px;
   border-radius: 5px;
   -khtml-border-radius: 5px;
-}
-
-#info {
-  width: 270px;
-  height: 260px;
 }
 
 #projects {
