@@ -12,26 +12,24 @@
     <h2>Projects</h2>
     {{ range $project := $.Site.Data.projects.projects -}}
     <div class="project">
-      <a href="{{ .link }}">
-        {{ if .videos }}
-          <video width="600" height="400" autoplay loop muted playsinline>
-            {{ range $video := .videos -}}
-              {{ with $.Resources.GetMatch $video -}}
-                <source src="{{ .RelPermalink }}" type="{{ .MediaType }}">
-              {{ end -}}
-            {{ end -}}
-          </video>
-        {{ end -}}
-        {{ range $image_index, $image_name := .images -}}
-          {{ $image := $.Resources.GetMatch $image_name -}}
-          {{ $width := 600 -}}
-          {{ $height := 400 -}}
-          {{ $resized1x := $image.Fill (printf "%vx%v Top png" $width $height) -}}
-          {{ $resized2x := $image.Fill (printf "%vx%v Top png" (mul $width 2) (mul $height 2)) -}}
-          <img class="image{{ $image_index }}" src="{{$resized1x.RelPermalink}}" srcset="{{$resized1x.RelPermalink}} 1x, {{$resized2x.RelPermalink}} 2x" alt="{{ $project.title }}" />
-        {{ end -}}
-        <div class="title">{{ $project.title -}}</div>
-      </a>
+      {{ if .video }}
+        <iframe width="600" height="400" src="{{ .video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <a href="{{ .link }}">
+          <div class="title">{{ $project.title -}}</div>
+        </a>
+      {{ else -}}
+        <a href="{{ .link }}">
+          {{ range $image_index, $image_name := .images -}}
+            {{ $image := $.Resources.GetMatch $image_name -}}
+            {{ $width := 600 -}}
+            {{ $height := 400 -}}
+            {{ $resized1x := $image.Fill (printf "%vx%v Top png" $width $height) -}}
+            {{ $resized2x := $image.Fill (printf "%vx%v Top png" (mul $width 2) (mul $height 2)) -}}
+            <img class="image{{ $image_index }}" src="{{$resized1x.RelPermalink}}" srcset="{{$resized1x.RelPermalink}} 1x, {{$resized2x.RelPermalink}} 2x" alt="{{ $project.title }}" />
+            <div class="title">{{ $project.title -}}</div>
+          {{ end -}}
+        </a>
+      {{ end -}}
     </div>{{ end -}}
   </section>
 {{ end -}}
