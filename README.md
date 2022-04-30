@@ -6,4 +6,4 @@
 
 ## Adding or modifying games
 
-Games are defined in [`data/projects.toml`](./data/projects.toml). The `videos` and `images` fields reference files in the [`content`](./content) directory.
+Games are defined in [`data/projects.toml`](./data/projects.toml). The `images` field references files in the [`content`](./content) directory.
