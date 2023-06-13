@@ -128,6 +128,10 @@ footer {
   font-size: 14px;
 }
 
+.video {
+  pointer-events: none;
+}
+
 .image0 {
   position: absolute;
 }
