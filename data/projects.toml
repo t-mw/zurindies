@@ -17,3 +17,8 @@ images = ["tr33-1.jpg", "tr33-2.jpg", "tr33-3.jpg"]
 link = "https://twitter.com/ssf_game"
 title = "Super Space Friends"
 images = ["super-space-friends.jpg"]
+
+[[projects]]
+link = "https://store.steampowered.com/app/2343820/Hertz/"
+title = "Hertz"
+images = ["hertz-1.png", "hertz-2.png", "hertz-3.png"]
