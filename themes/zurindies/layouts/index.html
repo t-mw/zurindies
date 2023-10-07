@@ -11,22 +11,21 @@
   <section id="projects">
     <h2>Projects</h2>
     {{ range $project := $.Site.Data.projects.projects -}}
-    <a href="{{ .link }}">
+    <a href="{{ .link }}" data-shuffle>
       <div class="project">
         {{ if .youtube }}
             <iframe class="video" width="640" height="360" src="https://www.youtube.com/embed/{{ .youtube }}?modestbranding=1&autoplay=1&mute=1&controls=0&rel=0&playlist={{ .youtube }}&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="title">{{ $project.title -}}</div>
         {{ else -}}
-          <a href="{{ .link }}">
-            {{ range $image_index, $image_name := .images -}}
-              {{ $image := $.Resources.GetMatch $image_name -}}
-              {{ $width := 640 -}}
-              {{ $height := 360 -}}
-              {{ $resized1x := $image.Fill (printf "%vx%v Top png" $width $height) -}}
-              {{ $resized2x := $image.Fill (printf "%vx%v Top png" (mul $width 2) (mul $height 2)) -}}
-              <img class="image{{ $image_index }}" src="{{$resized1x.RelPermalink}}" srcset="{{$resized1x.RelPermalink}} 1x, {{$resized2x.RelPermalink}} 2x" alt="{{ $project.title }}" />
-              <div class="title">{{ $project.title -}}</div>
-            {{ end -}}
+          {{ range $image_index, $image_name := .images -}}
+            {{ $image := $.Resources.GetMatch $image_name -}}
+            {{ $width := 640 -}}
+            {{ $height := 360 -}}
+            {{ $resized1x := $image.Fill (printf "%vx%v Top png" $width $height) -}}
+            {{ $resized2x := $image.Fill (printf "%vx%v Top png" (mul $width 2) (mul $height 2)) -}}
+            <img class="image{{ $image_index }}" src="{{$resized1x.RelPermalink}}" srcset="{{$resized1x.RelPermalink}} 1x, {{$resized2x.RelPermalink}} 2x" alt="{{ $project.title }}" />
+            <div class="title">{{ $project.title -}}</div>
+          {{ end -}}
         {{ end -}}
       </div></a>{{ end -}}
   </section>

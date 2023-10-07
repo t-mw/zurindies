@@ -5,7 +5,6 @@ function shuffleArray(a) {
     a[i] = a[j];
     a[j] = x;
   }
-
   return a;
 }
 
@@ -16,7 +15,7 @@ function shuffleProjects() {
   var projectEls = [];
   while (projects.children.length) {
     var child = projects.children[0];
-    if (child.className === "project") {
+    if (child.hasAttribute("data-shuffle")) {
       projectEls.push(child);
     } else {
       newChildren.push(child);
