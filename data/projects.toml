@@ -27,3 +27,8 @@ images = ["hertz-1.png", "hertz-2.png", "hertz-3.png"]
 link = "https://store.steampowered.com/app/2372500/Trolley_Delayma/"
 title = "Trolley Delayma"
 youtube = "h8HU7QjlZT4"
+
+[[projects]]
+link = "https://piotrone.itch.io/the-lives-of-others"
+title = "The Lives Of Others"
+youtube = "Aw71aYsq1fw"
