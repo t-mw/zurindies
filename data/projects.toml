@@ -4,16 +4,6 @@ title = "Kandria"
 youtube = "usc0Znm-gbA"
 
 [[projects]]
-link = "https://twitter.com/UrbanGiftGame"
-title = "Urban Gift"
-images = ["urban-gift.jpg"]
-
-[[projects]]
-link = "https://ooku.itch.io/tr33public"
-title = "TR33"
-images = ["tr33-1.jpg", "tr33-2.jpg", "tr33-3.jpg"]
-
-[[projects]]
 link = "https://twitter.com/ssf_game"
 title = "Super Space Friends"
 images = ["super-space-friends.jpg"]
