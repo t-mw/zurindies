@@ -56,6 +56,11 @@ h2 {
   margin-bottom: 10px;
 }
 
+ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
 main {
   width: 700px;
   padding: 250px 20px 20px 20px;

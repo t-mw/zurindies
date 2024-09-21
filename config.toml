@@ -1,6 +1,6 @@
 baseURL = "https://www.zurindies.ch/"
 languageCode = "en-us"
-title = "zürindies"
+title = "zürindies: Game Development Meetup in Zürich | Indie Game Developer Community"
 theme = "zurindies"
 disableHugoGeneratorInject = true
 uglyurls = true
