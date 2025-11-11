@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g>
+        <clipPath id="_clip1">
+            <rect x="-0" y="-0" width="400" height="400"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <rect x="0" y="0" width="400" height="400" style="fill:rgb(0,130,180);"/>
+            <g id="header.afdesign" transform="matrix(0.409333,0,0,0.409333,200,302)">
+                <g transform="matrix(1,0,0,1,-750,-250)">
+                    <clipPath id="_clip2">
+                        <rect x="0" y="0" width="1500" height="500"/>
+                    </clipPath>
+                    <g clip-path="url(#_clip2)">
+                        <g>
+                            <clipPath id="_clip3">
+                                <rect x="0" y="-0" width="1500" height="500"/>
+                            </clipPath>
+                            <g clip-path="url(#_clip3)">
+                                <rect x="-14.806" y="-18.933" width="1531.5" height="532.965" style="fill:url(#_Linear4);"/>
+                                <g transform="matrix(1,0,0,1,42.808,19.6429)">
+                                    <path d="M-34.601,310.808L457.958,128.218L780.14,295.749L1092.7,139.132L1638.65,418.89L1652.88,603.233L-102.445,604.298L-34.601,310.808Z" style="fill:rgb(218,253,255);"/>
+                                </g>
+                                <g transform="matrix(1,0,0,1,24.8072,0)">
+                                    <path d="M362.942,189.756L378.338,232.854L479.49,203.288L530.202,210.429L556.125,189.546L475.959,147.861L362.942,189.756Z" style="fill:white;"/>
+                                </g>
+                                <g transform="matrix(1,0,0,1,25,0)">
+                                    <path d="M1110.51,158.775L998.901,214.699L1046.34,232.854L1109.54,209.416L1172.86,209.34L1183.49,196.17L1110.51,158.775Z" style="fill:white;"/>
+                                </g>
+                                <g transform="matrix(1.02082,0,0,1.03644,-21.532,2.81365)">
+                                    <path d="M-33.771,257.199C61.122,218.308 284.072,185.847 284.072,185.847C284.072,185.847 416.519,376.942 532.332,331.605C609.073,301.564 805.6,217.277 805.6,217.277C805.6,217.277 935.07,343.249 1032.76,351.844C1130.45,360.439 1325.48,226.644 1325.48,226.644L1500,295.665L1500,500L0,500C0,500 -128.664,296.089 -33.771,257.199Z" style="fill:rgb(199,237,223);"/>
+                                </g>
+                                <g transform="matrix(1,0,0,1,0,-39)">
+                                    <path d="M-14.806,439.702L98.474,428.612L156.347,385.901L236.381,385.901L244.17,435.938L366.32,436.874L404.605,474.382L499.02,460.493L553.789,407.098L608.811,414.849L605.838,545.033L750,545.033L750,431.006L851.2,416.19L855.669,385.901L998.901,385.901L998.901,458.746L1122.11,453.003L1125.25,415.138L1183.49,414.057L1183.49,470.955L1308.92,466.708L1313.93,385.901L1401.49,385.901L1419.32,462.288L1500,436.652L1556.11,536.212L1225.18,623.941L98.011,596.846L-65.682,541.941L-14.806,439.702Z" style="fill:rgb(128,128,128);"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g transform="matrix(5.57274,0,0,5.57274,-766.353,-549.232)">
+                <text x="158.197px" y="134.446px" style="font-family:'CourierNewPS-BoldMT', 'Courier New', monospace;font-weight:700;font-size:50px;fill:white;">z</text>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <linearGradient id="_Linear4" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.96031e-14,-320.142,320.142,1.96031e-14,895.635,351.232)"><stop offset="0" style="stop-color:rgb(184,233,255);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(0,130,180);stop-opacity:1"/></linearGradient>
+    </defs>
+</svg>
