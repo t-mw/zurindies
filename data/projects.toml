@@ -22,3 +22,8 @@ youtube = "h8HU7QjlZT4"
 link = "https://piotrone.itch.io/the-lives-of-others"
 title = "The Lives Of Others"
 youtube = "Aw71aYsq1fw"
+
+[[projects]]
+link = "https://store.steampowered.com/app/3467680/Offshore_Prophets/"
+title = "Offshore Prophets"
+images =["offshore-prophets.png"] 
